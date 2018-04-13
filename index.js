@@ -29,7 +29,7 @@ function calculatesFarePrice(startStreet, endStreet) {
   }
   else
   {
-    return 'Cannot travel that far'
+    return 'cannot travel that far'
   }
   return farePrice;
 }
