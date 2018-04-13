@@ -15,7 +15,7 @@ function calculatesFarePrice(startStreet, endStreet) {
   const absDistance = distanceTravelledInFeet(startStreet, endStreet);
   let farePrice;
 
-  if (absDistance > 400)
+  if (absDistance < 400)
   {
     farePrice = 0;
   }
