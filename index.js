@@ -21,7 +21,7 @@ function calculatesFarePrice(startStreet, endStreet) {
   }
   else if (absDistance >= 400 && absDistance < 2000)
   {
-    farePrice = .02 * absDistance;
+    farePrice = .02 * (absDistance-400);
   }
   else if (absDistance >= 2000 && absDistance < 2500)
   {
