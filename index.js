@@ -14,10 +14,10 @@ function distanceTravelledInFeet(startStreet, endStreet) {
 function calculatesFarePrice(startStreet, endStreet) {
   const absDistance = distanceTravelledInFeet(startStreet, endStreet);
   let farePrice;
-  
+
   if (absDistance > 400)
   {
-    farePrice = 0;  
+    farePrice = 0;
   }
   else if (absDistance >= 400 && absDistance < 2000)
   {
@@ -31,4 +31,5 @@ function calculatesFarePrice(startStreet, endStreet) {
   {
     return 'Cannot travel that far'
   }
+  return farePrice;
 }
